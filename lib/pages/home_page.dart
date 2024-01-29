@@ -17,6 +17,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Home"),
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.grey,
+          elevation: 0,
         ),
         drawer: const MyDrawer(),
         body: _buildUserList(),
@@ -25,27 +28,28 @@ class HomePage extends StatelessWidget {
 
   // build a list of users except for the current logged in User 
   Widget _buildUserList () {
-    return StreamBuilder(
-      stream: _chatService.getUsersStream(),
-      builder: (context, snapshot) {
-        // error
-        if (snapshot.hasError) {
-          return const Text("Error");
-        }
+    return StreamBuilder<List<Map<String, dynamic>>>(
+  stream: _chatService.getUsersStream(),
+  builder: (context, snapshot) {
+    // error
+    if (snapshot.hasError) {
+      return const Text("Error");
+    }
 
-        // loading ..
-        if(snapshot.connectionState == ConnectionState.waiting) {
-          return const Text("Loading..");
-        }
+    // loading ..
+    if(snapshot.connectionState == ConnectionState.waiting) {
+      return const Text("Loading..");
+    }
 
-        //return list View 
-        return ListView(
-          children: snapshot.data!
-              .map<Widget>((userData) => _buildUserListItem(userData, context))
-              .toList(),
-        );
-      },
+    //return list View 
+    return ListView(
+      children: snapshot.data!
+          .map<Widget>((userData) => _buildUserListItem(userData, context))
+          .toList(),
     );
+  },
+);
+
   }
 
   // build individual list title for user 
