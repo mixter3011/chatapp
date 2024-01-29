@@ -1,4 +1,4 @@
-# NFT App 
+# Chat App 
 
 ## Table of Contents
 
