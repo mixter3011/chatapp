@@ -40,8 +40,12 @@ To get started with the ChatApp, follow these simple steps:
 4. Run the application:
    ```bash
    npm start
+   
+5. To get the APK version of the ChatApp runt the below command:
+   ```bash
+   flutter build apk
+The above code will make a .apk file in the 'build/app/outputs/flutter-apk', this path can be accesed from the same directory where you have cloned this repository.
 
-  This will start the development server, and you can access the app at http://localhost:3000 in your browser. 
   
 ## Functionalities 
 ## Firebase Authentication 
