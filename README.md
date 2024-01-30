@@ -12,8 +12,7 @@
 
 ## Introduction
 
-Welcome to the NFT App – your gateway to exploring, creating, and trading Non-Fungible Tokens (NFTs). This application seamlessly integrates a Solidity-based smart contract for token management and leverages Firebase for user authentication.
-
+This a Clean, Mordern and Minimalistic Chat App which enables real-time chatting facility. It also includes end - to - end encryption enables from the Firebase.Auth .  
 ## Installation
 
 To get started with the NFT App, follow these simple steps:
