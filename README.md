@@ -15,13 +15,13 @@
 This a Clean, Mordern and Minimalistic Chat App which enables real-time chatting facility. It also includes end - to - end encryption enables from the Firebase.Auth .  
 ## Installation
 
-To get started with the NFT App, follow these simple steps:
+To get started with the ChatApp, follow these simple steps:
 
 1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/your-username/nft-app.git
-   cd nft-app
+   cd chatapp
 2. Install dependencies: 
 
    ```bash
